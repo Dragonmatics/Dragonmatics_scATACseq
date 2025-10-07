@@ -299,7 +299,7 @@ pbmc <- CreateSeuratObject(
 ```{r, eval=FALSE}
 pbmc
 ```
-```{}
+```
 An object of class Seurat 
 165434 features across 10246 samples within 1 assay 
 Active assay: peaks (165434 features, 0 variable features)
@@ -359,7 +359,7 @@ information, gene annotations, and genome information.
 ```{r, eval=FALSE}
 pbmc[['peaks']]
 ```
-```{}
+```
 ChromatinAssay data with 165434 features for 10246 cells
 Variable features: 0 
 Genome: 
@@ -378,7 +378,7 @@ about the `ChromatinAssay` class.
 ```{r, eval=FALSE}
 granges(pbmc)
 ```
-```{}
+```
 GRanges object with 165434 ranges and 0 metadata columns:
              seqnames        ranges strand
                 <Rle>     <IRanges>  <Rle>
@@ -425,7 +425,7 @@ ah <- AnnotationHub()
 # Search for the Ensembl 98 EnsDb for Homo sapiens on AnnotationHub
 query(ah, "EnsDb.Hsapiens.v98")
 ```
-```{}
+```
 AnnotationHub with 1 record
 # snapshotDate(): 2025-04-08
 # names(): AH75011
@@ -529,7 +529,7 @@ dev.off()
 
 
 <div class="figure" style="text-align: center">
-<img src="figures/qc_metrics.png" alt="Relationship between number of fragments in peaks and TSS enrichment score." style="display: block; margin: auto; max-width: 100%; height: auto;"/>
+<img src="figures/qc_metrics.png" alt="Relationship between number of fragments in peaks and TSS enrichment score." style="display: block; margin: auto; max-width: 90%; height: auto;"/>
 <p class="caption">**Figure 1.**Relationship between number of fragments in peaks and TSS enrichment score.</p>
 </div>
 
@@ -558,7 +558,7 @@ dev.off()
 ```
 
 <div class="figure" style="text-align: center">
-<img src="figures/fragment_histogram.png" alt="Fragment length distribution for all cells, grouped by nucleosome signal strength." style="display: block; margin: auto; max-width: 100%; height: auto;"/>
+<img src="figures/fragment_histogram.png" alt="Fragment length distribution for all cells, grouped by nucleosome signal strength." style="display: block; margin: auto; max-width: 90%; height: auto;"/>
 <p class="caption">**Figure 2.** Fragment length distribution for all cells, grouped by nucleosome signal strength.</p>
 </div>
 
@@ -597,7 +597,7 @@ dev.off()
 
 
 <div class="figure" style="text-align: center">
-<img src="figures/qc_violin.png" alt="Violin plots showing the distribution of QC metrics across all cells." style="display: block; margin: auto; max-width: 100%; height: auto;"/>
+<img src="figures/qc_violin.png" alt="Violin plots showing the distribution of QC metrics across all cells." style="display: block; margin: auto; max-width: 90%; height: auto;"/>
 <p class="caption">**Figure 3.** Violin plots showing the distribution of QC metrics across all cells.</p>
 </div>
 
@@ -653,7 +653,7 @@ dev.off()
 ```
 
 <div class="figure" style="text-align: center">
-<img src="figures/qc_correlation.png" alt="qc_correlation" style="display: block; margin: auto; max-width: 100%; height: auto;"/>
+<img src="figures/qc_correlation.png" alt="qc_correlation" style="display: block; margin: auto; max-width: 90%; height: auto;"/>
 <p class="caption">**Figure 4.** Correlation between each LSI component and sequencing depth.</p>
 </div>
 
@@ -683,7 +683,7 @@ dev.off()
 
 
 <div class="figure" style="text-align: center">
-<img src="figures/umap.png" alt="umap" style="display: block; margin: auto; max-width: 100%; height: auto;"/>
+<img src="figures/umap.png" alt="umap" style="display: block; margin: auto; max-width: 90%; height: auto;"/>
 <p class="caption">**Figure 5.** Umap plot of the scATAC-seq data.</p>
 </div>
 
@@ -775,7 +775,7 @@ dev.off()
 
 
 <div class="figure" style="text-align: center">
-<img src="figures/gene_activity.png" alt="gene_activity" style="display: block; margin: auto; max-width: 100%; height: auto;"/>
+<img src="figures/gene_activity.png" alt="gene_activity" style="display: block; margin: auto; max-width: 90%; height: auto;"/>
 <p class="caption">**Figure 6.** Gene activity profiles for canonical marker genes.</p>
 </div>
 
@@ -822,7 +822,7 @@ predicted.labels <- TransferData(
 
 pbmc <- AddMetaData(object = pbmc, metadata = predicted.labels)
 ```
-```{}
+```
 Running CCA
 Merging objects
 Finding neighborhoods
@@ -866,7 +866,7 @@ dev.off()
 
 
 <div class="figure" style="text-align: center">
-<img src="figures/integration.png" alt="scATAC-seq and scRNA-seq integration" style="display: block; margin: auto; max-width: 100%; height: auto;"/>
+<img src="figures/integration.png" alt="scATAC-seq and scRNA-seq integration" style="display: block; margin: auto; max-width: 90%; height: auto;"/>
 <p class="caption">**Figure 7.** scATAC-seq and scRNA-seq integration.</p>
 </div>
 
@@ -909,7 +909,7 @@ dev.off()
 
 
 <div class="figure" style="text-align: center">
-<img src="figures/prediction_score.png" alt="prediction_score" style="display: block; margin: auto; max-width: 100%; height: auto;"/>
+<img src="figures/prediction_score.png" alt="prediction_score" style="display: block; margin: auto; max-width: 90%; height: auto;"/>
 <p class="caption">**Figure 8.** Plotting the prediction score for the cells assigned to each label.</p>
 </div>
 
@@ -1093,7 +1093,7 @@ dev.off()
 ```
 
 <div class="figure" style="text-align: center">
-<img src="figures/da_peaks.png" alt="da_peaks" style="display: block; margin: auto; max-width: 100%; height: auto;"/>
+<img src="figures/da_peaks.png" alt="da_peaks" style="display: block; margin: auto; max-width: 90%; height: auto;"/>
 <p class="caption">**Figure 9.** Violins and feature plot.</p>
 </div>
 
@@ -1178,7 +1178,7 @@ dev.off()
 ```
 
 <div class="figure" style="text-align: center">
-<img src="figures/cd4naive_ego.png" alt="cd4naive_ego" style="display: block; margin: auto; max-width: 100%; height: auto;"/>
+<img src="figures/cd4naive_ego.png" alt="cd4naive_ego" style="display: block; margin: auto; max-width: 90%; height: auto;"/>
 <p class="caption">**Figure 9.** Gene ontology enrichment plot.</p>
 </div>
 
@@ -1207,7 +1207,7 @@ dev.off()
 ```
 
 <div class="figure" style="text-align: center">
-<img src="figures/cd14mono_ego.png" alt="cd14mono_ego" style="display: block; margin: auto; max-width: 100%; height: auto;"/>
+<img src="figures/cd14mono_ego.png" alt="cd14mono_ego" style="display: block; margin: auto; max-width: 90%; height: auto;"/>
 <p class="caption">**Figure 10.** Gene ontology enrichment plot.</p> 
 </div>
 
@@ -1276,7 +1276,7 @@ dev.off()
 
 
 <div class="figure" style="text-align: center">
-<img src="figures/coverage.png" alt="coverage" style="display: block; margin: auto; max-width: 100%; height: auto;"/>
+<img src="figures/coverage.png" alt="coverage" style="display: block; margin: auto; max-width: 90%; height: auto;"/>
 <p class="caption">**Figure 11.** Coverage plot.</p>
 </div>
 
@@ -1284,7 +1284,6 @@ dev.off()
 ```{r, eval=FALSE}
 regions_highlight <- subsetByOverlaps(StringToGRanges(open_cd14mono), LookupGeneCoords(pbmc, "LYZ"))
 
-png("figures/coverage_lyz.png", width=12, height=10, units="in", res=300)
 CoveragePlot(
   object = pbmc,
   region = "LYZ",
@@ -1292,7 +1291,7 @@ CoveragePlot(
   extend.upstream = 1000,
   extend.downstream = 5000
 )
-dev.off
+
 ```
 
 ```{r, echo=FALSE, eval=FALSE}
@@ -1318,7 +1317,7 @@ dev.off
 ```
 
 <div class="figure" style="text-align: center">
-<img src="figures/coverage_lyz.png" alt="coverage_lyz" style="display: block; margin: auto; max-width: 100%; height: auto;"/>
+<img src="figures/coverage_lyz.png" alt="coverage_lyz" style="display: block; margin: auto; max-width: 90%; height: auto;"/>
 <p class="caption">**Figure 12.** Coverage plot.</p>
 </div>
 
